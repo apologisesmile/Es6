@@ -1,0 +1,56 @@
+@jd_color: #e43130;
+@bgcolor:#f6f6f6;
+@color:#333;
+
+
+.pre(@style,@val){
+    @{style}:@val;
+    -webkit-@{style}:@val;
+    -moz-@{style}:@val;
+    -ms-@{style}:@val;
+    -o-@{style}:@val;
+}
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    //移动端控件去除默认样式
+    .pre(appearance, none);
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",Helvetica,sans-serif;
+    color: #666;
+    background: #f6f6f6;
+}
+ol,ul{
+    list-style: none;
+}
+input,textarea{
+    outline: none;
+    border: none;
+    resize: none;
+}
+table{
+    border-collapse: collapse;
+}
+a{
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: @color;
+    &:hover{
+        color: @color;
+    }
+}
+
+.clearfix{
+    zoom:1;
+    &::after{
+        content: "";
+        display: block;
+        visibility: hidden;
+        clear: both;
+        height: 0;
+        font-size: 0;
+    }
+}

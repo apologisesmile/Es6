@@ -1,0 +1,104 @@
+@import "./base.less";
+body {
+	header {
+		width: 100%;
+		height: 44px;
+		background: @jd_color;
+		left: 0;
+		top: 0;
+		position: fixed;
+		.header-con {
+			position: relative;
+			padding: 0 44px;
+			overflow: hidden;
+			a {
+				position: absolute;
+				top: 0;
+				width: 44px;
+				height: 44px;
+				&:nth-of-type(1) {
+					background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAAAXNSR0IArs4c6QAAAHlJREFUWAnt2LEJwDAMRFE5c2ShLOKhsp69h3ISeAI1CnyBiJvA8dwcHu7+mNmrvbWdZivMHAq4dOgW7kDt65y6fiPg1AZnt8kr7haKPAgggAACfxOIskCbKdwabaaAlw0rmhaDAAIIIIBAQYA2U8CLX2kzFcB8m/kAgGUmQShl8pcAAAAASUVORK5CYII=)
+						center center no-repeat;
+					background-size: 20px 16px;
+					left: 0;
+				}
+				&:nth-of-type(2) {
+					right: 0;
+					text-align: center;
+					line-height: 44px;
+					color: white;
+				}
+			}
+			div.header-search {
+				width: 100%;
+				height: 30px;
+				margin-top: 7px;
+				background: white;
+				border-radius: 15px;
+				position: relative;
+				overflow: hidden;
+				i {
+					position: absolute;
+					top: 8px;
+					&.jd-icon {
+						width: 20px;
+						height: 15px;
+						background: url(../img/下载.png)
+							no-repeat;
+						background-size: 20px 15px;
+						left: 15px;
+						padding-right: 7px;
+						border-right: 1px solid #dddddd;
+					}
+					&.jd-search {
+						width: 16px;
+						height: 16px;
+						background: url(../img/jd-sprites.png) no-repeat;
+						background-size: image-width('../img/jd-sprites.png')/2 image-height('../img/jd-sprites.png')/2;
+						background-position-x: -83px;
+						left: 51px;
+					}
+				}
+				input.search-con {
+					width: 100%;
+					height: 30px;
+					padding-left: 66px;
+					text-indent: 13px;
+					line-height: 44px;
+				}
+			}
+		}
+	}
+	main{
+		width: 8rem;
+		margin: 0 auto;
+		div.jd-lunbo{
+			background: url(../img/bj_lunbo.jpg) no-repeat;
+			background-size: cover;
+			height: 4rem;
+			overflow: hidden;
+			ul.lunbo-con{
+				width: 100%*10;
+				position: relative;
+				left: 0;
+				top: 40px;
+				z-index: 2;
+				li{
+					width: 10%;
+					float: left;
+					a{
+						border-radius: .2rem;
+						display: block;
+						margin: 0 auto;
+						width: 7.45rem;
+						overflow: hidden;
+						img{
+							width: 100%;
+							float: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}

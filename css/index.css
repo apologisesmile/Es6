@@ -1,0 +1,148 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+}
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", Helvetica, sans-serif;
+  color: #666;
+  background: #f6f6f6;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}
+table {
+  border-collapse: collapse;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+body header {
+  width: 100%;
+  height: 44px;
+  background: #e43130;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+body header .header-con {
+  position: relative;
+  padding: 0 44px;
+  overflow: hidden;
+}
+body header .header-con a {
+  position: absolute;
+  top: 0;
+  width: 44px;
+  height: 44px;
+}
+body header .header-con a:nth-of-type(1) {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAAAXNSR0IArs4c6QAAAHlJREFUWAnt2LEJwDAMRFE5c2ShLOKhsp69h3ISeAI1CnyBiJvA8dwcHu7+mNmrvbWdZivMHAq4dOgW7kDt65y6fiPg1AZnt8kr7haKPAgggAACfxOIskCbKdwabaaAlw0rmhaDAAIIIIBAQYA2U8CLX2kzFcB8m/kAgGUmQShl8pcAAAAASUVORK5CYII=) center center no-repeat;
+  background-size: 20px 16px;
+  left: 0;
+}
+body header .header-con a:nth-of-type(2) {
+  right: 0;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+}
+body header .header-con div.header-search {
+  width: 100%;
+  height: 30px;
+  margin-top: 7px;
+  background: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+body header .header-con div.header-search i {
+  position: absolute;
+  top: 8px;
+}
+body header .header-con div.header-search i.jd-icon {
+  width: 20px;
+  height: 15px;
+  background: url(../img/下载.png) no-repeat;
+  background-size: 20px 15px;
+  left: 15px;
+  padding-right: 7px;
+  border-right: 1px solid #dddddd;
+}
+body header .header-con div.header-search i.jd-search {
+  width: 16px;
+  height: 16px;
+  background: url(../img/jd-sprites.png) no-repeat;
+  background-size: 200px 200px;
+  background-position-x: -83px;
+  left: 51px;
+}
+body header .header-con div.header-search input.search-con {
+  width: 100%;
+  height: 30px;
+  padding-left: 66px;
+  text-indent: 13px;
+  line-height: 44px;
+}
+body main {
+  width: 8rem;
+  margin: 0 auto;
+}
+body main div.jd-lunbo {
+  background: url(../img/bj_lunbo.jpg) no-repeat;
+  background-size: cover;
+  height: 4rem;
+  overflow: hidden;
+}
+body main div.jd-lunbo ul.lunbo-con {
+  width: 1000%;
+  position: relative;
+  left: 0;
+  top: 40px;
+  z-index: 2;
+}
+body main div.jd-lunbo ul.lunbo-con li {
+  width: 10%;
+  float: left;
+}
+body main div.jd-lunbo ul.lunbo-con li a {
+  border-radius: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  width: 7.45rem;
+  overflow: hidden;
+}
+body main div.jd-lunbo ul.lunbo-con li a img {
+  width: 100%;
+  float: left;
+}
